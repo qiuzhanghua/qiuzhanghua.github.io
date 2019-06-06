@@ -11,7 +11,7 @@
     
     
     <item>
-      <title>Using hugo for the first time</title>
+      <title>Using hugo</title>
       <link>https://qiuzhanghua.github.io/post/2019-06-05-first/</link>
       <pubDate>Wed, 05 Jun 2019 22:31:56 +0800</pubDate>
       
@@ -26,7 +26,8 @@ https://gohugo.io/hosting-and-deployment/hosting-on-github/</description>
       <pubDate>Wed, 05 Jun 2019 22:24:14 +0800</pubDate>
       
       <guid>https://qiuzhanghua.github.io/about/</guid>
-      <description>Focus
+      <description>邱张华
+Focus
  Spring Kotlin Golang Rust Hadoop  qiuzhanghua@icloud.com</description>
     </item>
     
