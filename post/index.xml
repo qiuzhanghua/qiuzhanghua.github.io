@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Home</title>
+    <title>Posts on qiuzhanghua</title>
     <link>https://qiuzhanghua.github.io/post/</link>
-    <description>Recent content in Posts on Home</description>
+    <description>Recent content in Posts on qiuzhanghua</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>© 2016-19. Made by &lt;a href=&#39;https://qiuzhanghua.github.io&#39;&gt;qiuzhanghua&lt;/a&gt;.</copyright>
     <lastBuildDate>Wed, 05 Jun 2019 22:31:56 +0800</lastBuildDate>
     
 	<atom:link href="https://qiuzhanghua.github.io/post/index.xml" rel="self" type="application/rss+xml" />
@@ -14,11 +12,12 @@
     
     <item>
       <title>Using hugo for the first time</title>
-      <link>https://qiuzhanghua.github.io/post/using-hugo-for-the-first-time/</link>
+      <link>https://qiuzhanghua.github.io/post/2019-06-05-first/</link>
       <pubDate>Wed, 05 Jun 2019 22:31:56 +0800</pubDate>
       
-      <guid>https://qiuzhanghua.github.io/post/using-hugo-for-the-first-time/</guid>
-      <description>I am trying.</description>
+      <guid>https://qiuzhanghua.github.io/post/2019-06-05-first/</guid>
+      <description>I am trying.
+https://gohugo.io/hosting-and-deployment/hosting-on-github/</description>
     </item>
     
   </channel>
