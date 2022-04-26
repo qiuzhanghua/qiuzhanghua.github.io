@@ -2,14 +2,14 @@
 
 ## Build
 ```
-yarn build --output=docs
+yarn build
 # or
 eleventy --output=docs
 ```
 
 ## Run
 ```
-yarn serve --output=docs
+yarn serve
 # or
 eleventy --serve  --output=docs
 ```

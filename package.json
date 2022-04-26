@@ -3,10 +3,9 @@
   "version": "1.0.0",
   "description": "My blog site using 11ty",
   "scripts": {
-    "build": "npx eleventy",
-    "serve": "npx eleventy --serve",
-    "debug": "DEBUG=* npx eleventy",
-    "test": "jest"
+    "build": "npx eleventy  --output=docs",
+    "serve": "npx eleventy --serve  --output=docs",
+    "debug": "DEBUG=* npx eleventy  --output=docs"
   },
   "devDependencies": {
     "@11ty/eleventy": "^1.0.1",
