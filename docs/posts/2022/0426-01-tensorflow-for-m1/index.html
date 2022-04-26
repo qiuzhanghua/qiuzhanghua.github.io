@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Blog | 邱张华</title>
+
+  <link rel="stylesheet" href="/css/site.css">
+    <link rel="stylesheet" href="/css/prism-okaidia.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:700|Roboto&display=fallback" rel="stylesheet">
+</head>
+<body>
+<header>
+  <a href="/" class="link--home">博客</a>
+  <a href="/about" class="link--about">邱张华</a>
+</header>
+<main>
+  <article>
+  <h1>TensorFlow for M1</h1>
+  <time datetime="2022-04-26T00:00:00.000Z">2022/04/26</time>
+  <!-- Excerpt Start -->
+<p>尽心尽力</p>
+<!-- Excerpt End -->
+<h2>安装脚本</h2>
+<pre class="language-bash"><code class="language-bash">conda create --name tf25 <span class="token assign-left variable">python</span><span class="token operator">=</span><span class="token number">3.8</span><br><br>conda activate tf25<br><br>conda <span class="token function">install</span> -c apple tensorflow-deps<br><br>pip <span class="token function">install</span> tensorflow-macos<br><br>pip <span class="token function">install</span> tensorflow-metal<br><br>pip <span class="token function">install</span> jupyterlab</code></pre>
+<h2>使用</h2>
+<pre class="language-python"><code class="language-python"><span class="token keyword">import</span> tensorflow <span class="token keyword">as</span> tf<br><br><span class="token keyword">print</span><span class="token punctuation">(</span>tf<span class="token punctuation">.</span>config<span class="token punctuation">.</span>list_physical_devices<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><br><br><span class="token keyword">print</span><span class="token punctuation">(</span>tf<span class="token punctuation">.</span>__version__<span class="token punctuation">)</span><br><br><span class="token keyword">with</span> tf<span class="token punctuation">.</span>device<span class="token punctuation">(</span><span class="token string">'/device:GPU:0'</span><span class="token punctuation">)</span><span class="token punctuation">:</span><br>  a <span class="token operator">=</span> tf<span class="token punctuation">.</span>constant<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token number">1.0</span><span class="token punctuation">,</span> <span class="token number">2.0</span><span class="token punctuation">,</span> <span class="token number">3.0</span><span class="token punctuation">,</span> <span class="token number">4.0</span><span class="token punctuation">,</span> <span class="token number">5.0</span><span class="token punctuation">,</span> <span class="token number">6.0</span><span class="token punctuation">]</span><span class="token punctuation">,</span> shape<span class="token operator">=</span><span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">,</span> name<span class="token operator">=</span><span class="token string">'a'</span><span class="token punctuation">)</span><br>  b <span class="token operator">=</span> tf<span class="token punctuation">.</span>constant<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token number">1.0</span><span class="token punctuation">,</span> <span class="token number">2.0</span><span class="token punctuation">,</span> <span class="token number">3.0</span><span class="token punctuation">,</span> <span class="token number">4.0</span><span class="token punctuation">,</span> <span class="token number">5.0</span><span class="token punctuation">,</span> <span class="token number">6.0</span><span class="token punctuation">]</span><span class="token punctuation">,</span> shape<span class="token operator">=</span><span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">,</span> name<span class="token operator">=</span><span class="token string">'b'</span><span class="token punctuation">)</span><br>  c <span class="token operator">=</span> tf<span class="token punctuation">.</span>matmul<span class="token punctuation">(</span>a<span class="token punctuation">,</span> b<span class="token punctuation">)</span><br><br><span class="token keyword">print</span><span class="token punctuation">(</span>c<span class="token punctuation">)</span></code></pre>
+<h2>参考资料</h2>
+<p>https://www.mrdbourke.com/setup-apple-m1-pro-and-m1-max-for-machine-learning-and-data-science/</p>
+
+</article>
+</main>
+<footer>&copy; qiuzhanghua.github.io 2022</footer>
+</body>
+</html>

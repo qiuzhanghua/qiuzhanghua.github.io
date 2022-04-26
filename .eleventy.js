@@ -14,6 +14,10 @@ module.exports = function (eleventyConfig) {
     return moment(date).utc().format('LL'); // E.g. May 31, 2022
   });
 
+  eleventyConfig.addFilter('yymmdd', date => {
+    return moment(date).format('YYYY/MM/DD');
+  });
+
   eleventyConfig.addShortcode('excerpt', article => extractExcerpt(article));
 
   eleventyConfig.addPlugin(syntaxHighlight);
