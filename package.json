@@ -1,0 +1,19 @@
+{
+  "name": "qiuzhanghua",
+  "version": "1.0.0",
+  "description": "My blog site using 11ty",
+  "scripts": {
+    "build": "npx eleventy",
+    "serve": "npx eleventy --serve",
+    "debug": "DEBUG=* npx eleventy",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.1",
+    "jest": "^27.5.1",
+    "moment": "^2.29.3"
+  },
+  "dependencies": {
+    "@jest/globals": "latest"
+  }
+}
