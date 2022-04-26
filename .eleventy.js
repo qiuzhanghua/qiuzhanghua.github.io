@@ -2,6 +2,8 @@ const moment = require('moment');
 
 moment.locale('en');
 
+const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
+
 module.exports = function (eleventyConfig) {
 
   eleventyConfig.addFilter('dateIso', date => {
@@ -14,6 +16,7 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addShortcode('excerpt', article => extractExcerpt(article));
 
+  eleventyConfig.addPlugin(syntaxHighlight);
   // Folders to copy to output folder
   eleventyConfig.addPassthroughCopy("css");
 };
