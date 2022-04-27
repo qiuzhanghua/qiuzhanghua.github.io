@@ -1,7 +1,7 @@
 ---
 layout: post-layout.njk
 title: Web components support theme
-date: 2022-04-26
+date: 2022-04-27
 tags: ['post']
 ---
 <!-- Excerpt Start -->
