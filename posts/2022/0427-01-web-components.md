@@ -11,19 +11,12 @@ tags: ['post']
 
 ### SAP UI5
 
-https://sap.github.io/ui5-webcomponents/
+[UI5](https://sap.github.io/ui5-webcomponents/)
 
 ### Adobe Spectrum Web Components
 
-https://opensource.adobe.com/spectrum-web-components/
+[Spectrum](https://opensource.adobe.com/spectrum-web-components/)
 
 ### Microsoft Fluent UI
 
-https://developer.microsoft.com/fluentui
-
-
-### Smart Web Components
-
-https://www.npmjs.com/package/smart-webcomponents
-
-https://github.com/HTMLElements/smart-webcomponents
+[Fluent UI](https://developer.microsoft.com/fluentui)
