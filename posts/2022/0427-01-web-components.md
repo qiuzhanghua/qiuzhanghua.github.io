@@ -11,7 +11,8 @@ tags: ['post']
 
 ### SAP UI5
 
-[UI5](https://sap.github.io/ui5-webcomponents/)
+[UI5](https://sap.github.io/ui5-webcomponents/) | 
+[with Svelte](https://github.com/SAP-samples/ui5-webcomponents-sample-svelte)
 
 ### Adobe Spectrum Web Components
 
