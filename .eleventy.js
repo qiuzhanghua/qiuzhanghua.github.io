@@ -23,6 +23,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(syntaxHighlight);
   // Folders to copy to output folder
   eleventyConfig.addPassthroughCopy("css");
+  eleventyConfig.addPassthroughCopy("images");
 };
 
 function extractExcerpt(article) {
