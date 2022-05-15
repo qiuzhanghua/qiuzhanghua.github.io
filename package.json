@@ -10,10 +10,10 @@
   "devDependencies": {
     "@11ty/eleventy": "^1.0.1",
     "@11ty/eleventy-plugin-syntaxhighlight": "^4.0.0",
-    "jest": "^27.5.1",
+    "jest": "^28.1.0",
     "moment": "^2.29.3"
   },
   "dependencies": {
-    "@jest/globals": "latest"
+    "@jest/globals": "^28.1.0"
   }
 }
