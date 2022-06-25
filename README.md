@@ -1,15 +1,26 @@
 # 使用11ty写博客
 
-## Build
+## Install 
+```bash
+yarn
+# or
+pnpm i
 ```
+
+## Build
+```bash
 yarn build
+# or
+pnpm build
 # or
 eleventy --output=docs
 ```
 
 ## Run
-```
+```bash
 yarn serve
+# or
+pnpm serve
 # or
 eleventy --serve  --output=docs
 ```
