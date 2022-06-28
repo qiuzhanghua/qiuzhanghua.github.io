@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Blog | 邱张华</title>
+  <link rel="icon" type="image/png" href="/images/q-96.png">
+  <link rel="stylesheet" href="/css/site.css">
+  <link rel="stylesheet" href="/css/prism-okaidia.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:700|Roboto&display=fallback" rel="stylesheet">
+</head>
+<body>
+<header>
+  <a href="/" class="link--home">博客</a>
+  <a href="/about" class="link--about">邱张华</a>
+</header>
+<main>
+  <article>
+  <h1>Install sqlite3 for Node.js under Mac M1</h1>
+  <time datetime="2022-06-28T00:00:00.000Z">2022/06/28</time>
+  <!-- Excerpt Start -->
+<p>Keep trying!</p>
+<!-- Excerpt End -->
+<h3>Environment</h3>
+<ol>
+<li>Mac M1 Max</li>
+<li>Monterey</li>
+<li>Node v16.15.1</li>
+<li>pnpm v7.3.0</li>
+</ol>
+<h2>Steps</h2>
+<ol>
+<li>First of all</li>
+</ol>
+<pre class="language-bash"><code class="language-bash"><span class="token comment"># Don't activate conda !!!</span></code></pre>
+<ol start="2">
+<li>Install sqlite3</li>
+</ol>
+<pre class="language-bash"><code class="language-bash">brew <span class="token function">install</span> sqlite3</code></pre>
+<ol start="3">
+<li>Export env</li>
+</ol>
+<pre class="language-bash"><code class="language-bash"><span class="token builtin class-name">export</span> <span class="token assign-left variable"><span class="token environment constant">PATH</span></span><span class="token operator">=</span><span class="token string">"/opt/homebrew/opt/sqlite/bin:<span class="token environment constant">$PATH</span>"</span><br><span class="token builtin class-name">export</span> <span class="token assign-left variable">LDFLAGS</span><span class="token operator">=</span><span class="token string">"-L/opt/homebrew/opt/sqlite/lib"</span><br><span class="token builtin class-name">export</span> <span class="token assign-left variable">CPPFLAGS</span><span class="token operator">=</span><span class="token string">"-I/opt/homebrew/opt/sqlite/include"</span><br><span class="token builtin class-name">export</span> <span class="token assign-left variable">PKG_CONFIG_PATH</span><span class="token operator">=</span><span class="token string">"/opt/homebrew/opt/sqlite/lib/pkgconfig"</span></code></pre>
+<ol start="4">
+<li>Under your project</li>
+</ol>
+<pre class="language-bash"><code class="language-bash"><span class="token function">pnpm</span> <span class="token function">add</span> sqlite3<br><span class="token comment"># node_modules/.pnpm/sqlite3@5.0.8/node_modules/sqlite3: Running install script, done in 1m 41s</span></code></pre>
+<ol start="5">
+<li>Check</li>
+</ol>
+<pre class="language-bash"><code class="language-bash"><span class="token function">node</span> -e <span class="token string">"var sqlite3=require('sqlite3'); console.log(sqlite3.VERSION)"</span></code></pre>
+<p>3.38.4</p>
+
+</article>
+</main>
+<footer>&copy; qiuzhanghua.github.io 2022</footer>
+</body>
+</html>
