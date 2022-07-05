@@ -9,11 +9,11 @@
   },
   "devDependencies": {
     "@11ty/eleventy": "^1.0.1",
-    "@11ty/eleventy-plugin-syntaxhighlight": "^4.0.0",
-    "jest": "^28.1.1",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^4.1.0",
+    "jest": "^28.1.2",
     "moment": "^2.29.3"
   },
   "dependencies": {
-    "@jest/globals": "^28.1.1"
+    "@jest/globals": "^28.1.2"
   }
 }
