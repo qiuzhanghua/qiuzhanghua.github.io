@@ -22,7 +22,7 @@
 <p>一切皆有可能</p>
 <!-- Excerpt End -->
 <h2>日常使用</h2>
-<pre class="language-bash"><code class="language-bash"><span class="token comment"># initdb -U postgres -W</span><br>pg_ctl -D <span class="token variable">$TDP_HOME</span>/data/pgsql/14.2-2 -l <span class="token variable">$TDP_HOME</span>/log/pgsql/14.2-2/logfile start<br><span class="token comment"># pg_ctl -D $TDP_HOME/data/pgsql/14.4-1 -l $TDP_HOME/log/pgsql/14.2-2/logfile start</span><br><span class="token comment"># createuser app -U postgres -P</span><br><span class="token comment"># createdb app -U postgres -O app -E UTF8 -e</span><br><span class="token comment"># psql -U app -d app -h 127.0.0.1</span><br>pg_ctl stop</code></pre>
+<pre class="language-bash"><code class="language-bash"><span class="token comment"># initdb -U postgres -W</span><br>pg_ctl -D <span class="token variable">$TDP_HOME</span>/data/pgsql/14.4-1 -l <span class="token variable">$TDP_HOME</span>/log/pgsql/14.4-1/logfile start<br><span class="token comment"># createuser app -U postgres -P</span><br><span class="token comment"># createdb app -U postgres -O app -E UTF8 -e</span><br><span class="token comment"># psql -U app -d app -h 127.0.0.1</span><br>pg_ctl stop</code></pre>
 <h2>安装</h2>
 <pre class="language-bash"><code class="language-bash"><span class="token comment"># ~/work/package-pgsql.sh -v 14.2-2 -o windows -w "邱张华"</span><br>~/work/package-pgsql.sh -v <span class="token number">14.2</span>-2 -o osx -w <span class="token string">"邱张华"</span></code></pre>
 <h2>脚本</h2>

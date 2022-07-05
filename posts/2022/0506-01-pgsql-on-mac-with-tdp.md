@@ -11,8 +11,7 @@ tags: ['post']
 ## 日常使用
 ```bash
 # initdb -U postgres -W
-pg_ctl -D $TDP_HOME/data/pgsql/14.2-2 -l $TDP_HOME/log/pgsql/14.2-2/logfile start
-# pg_ctl -D $TDP_HOME/data/pgsql/14.4-1 -l $TDP_HOME/log/pgsql/14.2-2/logfile start
+pg_ctl -D $TDP_HOME/data/pgsql/14.4-1 -l $TDP_HOME/log/pgsql/14.4-1/logfile start
 # createuser app -U postgres -P
 # createdb app -U postgres -O app -E UTF8 -e
 # psql -U app -d app -h 127.0.0.1
